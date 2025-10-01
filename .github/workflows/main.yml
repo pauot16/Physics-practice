@@ -16,3 +16,7 @@ jobs:
 
    - name: Setup MSBuild
      uses: microsoft/setup-msbuild@v2
+
+   - name: Build solution
+     run: msbuild C:\Users\paugg1\Downloads\Handout1\fisica2-Handout1\PhysicsGame.sln
+   
