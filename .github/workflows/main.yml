@@ -19,4 +19,13 @@ jobs:
 
    - name: Build solution
      run: msbuild .\PhysicsGame.sln /p:Configuration=Release
+
+   - name: Create artifact directory
+     run: arctifact/PhysicsGame
+
+   - name: Copy the executable to the artifact directory
+     run: artifact/PhysicsGame
+
+   - name: Upload artifact
+     run: actions/upload-artifact@v4
    
